@@ -1,5 +1,7 @@
-body {
-  margin: 0;
+.App {
+  
+  font-weight: 500;
+  color: rgb(213, 46, 76);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +9,129 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  font-family: 
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+}
+.formsection{
+  background-color: black;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+.inputdev input{
+  width: 15rem;
+  height: 2rem;
+  
+}
+.btn{
+  background-color: rgb(213, 46, 76);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.formsection h2{
+  color: white;
+  display: flex;
+  
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right top, #ffe6f0, #fff0f5);
+  font-family: 'Dancing Script', cursive;
+}
+
+.card-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+
+.card {
+  width: 400px;
+  height: 500px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-front {
+  background: linear-gradient(to bottom right, #ffe0ec, #ffc1e3);
+  text-align: center;
+}
+
+.card-front h1 {
+  font-size: 2.5em;
+  color: #d63384;
+  font-family: 'Great Vibes', cursive;
+}
+
+.emoji {
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.card-back {
+  background: linear-gradient(to bottom right, #ffffff, #ffd6e8);
+  transform: rotateY(180deg);
+  text-align: center;
+}
+
+.message {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.footer {
+  font-size: 1.3em;
+  color: #d63384;
+  margin-top: 30px;
+}
+
+.signature {
+  font-size: 1.2em;
+  color: #e60073;
+  font-style: italic;
+  margin-top: 10px;
 }
